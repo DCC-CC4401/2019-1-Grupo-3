@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <style>
+    .wrapper{
+        min-height:100vh;
+        padding-top:10em;
+        
+    }
+    .float_right{
+        float:right;
+    }
+    .wrapper_title{
+        text-align:center;
+        margin-bottom: 4em;
+        
+    }
+
+    </style>
+
+
+
+  </head>
+  <body>
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light ">
+                <a class="navbar-brand" href="#">AppWeb</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#top">Inicio <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#evaluaciones">Evaluaciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#evaluadores">Evaluadores</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#rubricas" >Rubricas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cursos" >Cursos</a>
+                    </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                  </form>
+                </div>
+              </nav>
+
+              
+    <h1>Hello, world!</h1>
+<!-- Options Header -->
+    <section id="top" class="wrapper">
+
+        <div class="container">
+                <div class="container marketing">
+
+                        <!-- Three columns of text below the carousel -->
+                        <div class="row" style="text-align:center;">
+                          <div class="col-lg-3">
+                            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+                            <h2>Evaluaciones</h2>
+                            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.rbi leo risus, porta ac.</p>
+                            <p><a class="btn btn-secondary" href="#evaluaciones" role="button">Gestionar »</a></p>
+                           </div><!-- /.col-lg-4 -->
+                            <div class="col-lg-3">
+                            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+                            <h2>Evaluadores</h2>
+                            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.rbi leo risus, porta ac.</p>
+                            <p><a class="btn btn-secondary" href="#evaluadores" role="button">Gestionar »</a></p>
+                          </div><!-- /.col-lg-4 -->
+                          <div class="col-lg-3">
+                            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+                            <h2>Rúbricas</h2>
+                            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nech.</p>
+                            <p><a class="btn btn-secondary" href="#rubricas" role="button">Gestionar »</a></p>
+                          </div><!-- /.col-lg-4 -->
+                          <div class="col-lg-3">
+                            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+                            <h2>Cursos</h2>
+                            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum i.</p>
+                            <p><a class="btn btn-secondary" href="#cursos" role="button">Gestionar »</a></p>
+                          </div><!-- /.col-lg-4 -->
+                        </div><!-- /.row -->
+                
+                
+                        <!-- START THE FEATURETTES -->
+                
+                        <hr class="featurette-divider">
+                
+                        
+                
+                
+                        <!-- /END THE FEATURETTES -->
+                
+                      </div>
+        </div>
+        
+    </section>
+
+    <!-- Manage Evaluations-->
+
+    <section id="evaluaciones" class="wrapper" >
+        <div class="wrapper_title" >
+                <h2>Evaluaciones</h2>
+        </div>
+        
+        <div class="container">
+            <div class="row">
+                <!--Nueva Evaluación-->
+                <div class="col-lg-4">
+                    <h3>Crear Nueva Evaluación</h3>
+                    <form>
+                            <div class="form-row">
+                              <div class="form-group col-md-6">
+                                <label for="inputEmail4">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                              </div>
+                              <div class="form-group col-md-6">
+                                <label for="inputPassword4">Password</label>
+                                <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label for="inputAddress">Address</label>
+                              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                            </div>
+                           
+                            
+                            
+                            <button type="submit" class="btn btn-primary">Sign in</button>
+                          </form>
+                        
+                </div>
+                <!--Lista de Evaluaciones-->
+                <div class="col-lg-8">
+                        <h3>Evaluaciones Anteriores</h3>
+                        <ul class="list-group">
+                                <li class="list-group-item "><a href="">Grupo 13 "Grupo XD", 06/04/2019, CC-1000 </a> <div class="float_right"> <span style="float:right;"></span> <span class="badge badge-pill badge-info">Info</span><span class="badge badge-pill badge-warning">Editar</span><span class="badge badge-pill badge-danger">Eliminar</span></div></li>
+                                <li class="list-group-item "><a href="">Grupo 10 "Los cara de bit", 06/04/2019, CC-1000 </a> <div class="float_right"> <span style="float:right;"></span> <span class="badge badge-pill badge-info">Info</span><span class="badge badge-pill badge-warning">Editar</span><span class="badge badge-pill badge-danger">Eliminar</span></div></li>
+                                <li class="list-group-item "><a href="">Grupo 5 "Shishigang", 06/04/2019, CC-1000 </a><div class="float_right">  <span style="float:right;"></span> <span class="badge badge-pill badge-info">Info</span><span class="badge badge-pill badge-warning">Editar</span><span class="badge badge-pill badge-danger">Eliminar</span></div></li>
+                                <li class="list-group-item "><a href="">Grupo 7 "Shishigang", 06/04/2019, CC-1000 </a><div class="float_right">  <span style="float:right;"></span> <span class="badge badge-pill badge-info">Info</span><span class="badge badge-pill badge-warning">Editar</span><span class="badge badge-pill badge-danger">Eliminar</span></div></li>
+                        </ul> 
+                        <div style="margin-top:1em;">
+                                <button class="btn btn-primary">Ver Más</button>
+                        </div>
+                        
+                </div>
+            </div>
+        </div>
+    </section>
+    
+     <!-- Manage Evaluadores-->
+     <hr class="featurette-divider">
+
+
+     <section id="evaluadores" class="wrapper">
+            <div class="wrapper_title">
+                    <h2>Evaluadores</h2>
+            </div>
+            
+            <div class="container">
+                <div class="row">
+                    <!--Nueva Evaluación-->
+                    <div class="col-lg-6">
+                        <h3>Agregar Evaluador</h3>
+                        <form>
+                                <div class="form-row">
+                                  <div class="form-group col-md-6">
+                                    <label for="inputEmail4">Nombre</label>
+                                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                                  </div>
+                                  <div class="form-group col-md-6">
+                                    <label for="inputPassword4">Correo</label>
+                                    <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <label for="inputAddress">Cargo</label>
+                                  <select name="cargo" id="" class="form-control form-control-lg">
+                                      <option value=""> Ayudante </option>
+                                      <option value=""> Auxiliar</option>
+                                  </select>
+                                </div>
+                               
+                                
+                                
+                                <button type="submit" class="btn btn-primary">Agregar</button>
+                              </form>
+                            
+                    </div>
+                    <!--Lista de Evaluaciones-->
+                    <div class="col-lg-6">
+                            <h3>Últimas Evaluaciones</h3>
+                            <ul class="list-group">
+                                    <li class="list-group-item "><a href="">Jorge Santos </a> <div class="float_right"> <span style="float:right;"></span> <span class="badge badge-pill badge-info">Info</span><span class="badge badge-pill badge-warning">Editar</span><span class="badge badge-pill badge-danger">Eliminar</span></div></li>
+                                    <li class="list-group-item "><a href="">Natalia A. Cubillos </a> <div class="float_right"> <span style="float:right;"></span> <span class="badge badge-pill badge-info">Info</span><span class="badge badge-pill badge-warning">Editar</span><span class="badge badge-pill badge-danger">Eliminar</span></div></li>
+                                    <li class="list-group-item "><a href="">Jocelyn Simmonds </a><div class="float_right">  <span style="float:right;"></span> <span class="badge badge-pill badge-info">Info</span><span class="badge badge-pill badge-warning">Editar</span><span class="badge badge-pill badge-danger">Eliminar</span></div></li>
+                                    <li class="list-group-item "><a href="">Nicolás Mas Uno </a><div class="float_right">  <span style="float:right;"></span> <span class="badge badge-pill badge-info">Info</span><span class="badge badge-pill badge-warning">Editar</span><span class="badge badge-pill badge-danger">Eliminar</span></div></li>
+                            </ul> 
+                            <div style="margin-top:1em;">
+                                    <button class="btn btn-primary">Ver Más</button>
+                            </div>
+                            
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!--Manage Rúbricas-->
+    <hr class="featurette-divider">
+
+    <section id="rubricas" class="wrapper">
+        <div class="wrapper_title">
+            <h2>Rúbricas</h2>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                        <h3>Crear Rúbrica</h3>
+
+                        <form>
+                                <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                          <label for="inputEmail4">Nombre</label>
+                                          <input type="email" class="form-control" id="inputEmail4" placeholder="Nombre de Rúbrica">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                          <label for="inputPassword4">Curso</label>
+                                          <input type="password" class="form-control" id="inputPassword4" placeholder="Curso Asociado">
+                                        </div>
+                                      </div>
+                                
+                                <div class="form-group">
+                                    <small >Comentarios/Observaciones</small>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    </div>
+                               
+                               
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Generar</button>
+
+                            </form>
+                        
+                    <!-- Large modal -->
+
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+            <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Nombre de la Rúbrica</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+            </div>
+            <div class="modal-body">
+                    <table class="table table-sm">
+                            <thead>
+                              <tr>
+                                <th scope="col">1.-</th>
+                                <th scope="col"><input type="text" placeholder="Agrega un medidor"> </th>
+                                <th scope="col"><input type="text" placeholder="Agrega otra medición"> </th>
+                                <th scope="col"><input type="text" placeholder="Another"> </th>
+                                <th scope="col"><button class="btn btn-danger">Quitar</button></th>
+                                
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                    <td scope="col">1.-</th>
+                                    <td scope="col"><input type="text" placeholder="Agrega un medidor"> </td>
+                                    <td scope="col"><input type="text" placeholder="Agrega otra medición"> </td>
+                                    <td scope="col"><input type="text" placeholder="Another"> </td>
+                                    <td scope="col"><button class="btn btn-danger">Quitar</button></td>
+                                
+                              </tr>
+                              <tr>
+                                <th scope="row">3.- </th>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td scope="col"><button class="btn btn-success">Nuevo</button></td>
+                              </tr>
+                             
+                            </tbody>
+                          </table>
+            </div>
+            <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Descartar</button>
+                    <button type="button" class="btn btn-primary">Crear</button>
+            </div>
+    </div>
+  </div>
+</div>
+
+                </div>
+                <div class="col-lg-6">
+                        <h3>Rubricas Existentes</h3>
+                        <ul class="list-group">
+                                <li class="list-group-item "><a href="">Jorge Santos </a> <div class="float_right"> <span style="float:right;"></span> <span class="badge badge-pill badge-info">Info</span><span class="badge badge-pill badge-warning">Editar</span><span class="badge badge-pill badge-danger">Eliminar</span></div></li>
+                                <li class="list-group-item "><a href="">Natalia A. Cubillos </a> <div class="float_right"> <span style="float:right;"></span> <span class="badge badge-pill badge-info">Info</span><span class="badge badge-pill badge-warning">Editar</span><span class="badge badge-pill badge-danger">Eliminar</span></div></li>
+                                <li class="list-group-item "><a href="">Jocelyn Simmonds </a><div class="float_right">  <span style="float:right;"></span> <span class="badge badge-pill badge-info">Info</span><span class="badge badge-pill badge-warning">Editar</span><span class="badge badge-pill badge-danger">Eliminar</span></div></li>
+                                <li class="list-group-item "><a href="">Nicolás Mas Uno </a><div class="float_right">  <span style="float:right;"></span> <span class="badge badge-pill badge-info">Info</span><span class="badge badge-pill badge-warning">Editar</span><span class="badge badge-pill badge-danger">Eliminar</span></div></li>
+                        </ul> 
+                        <div style="margin-top:1em;">
+                                <button class="btn btn-primary">Ver Más</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+        
+
+        
+    </section>
+
+    <!--Cursos-->
+    <hr class="featurette-divider">
+
+    <section id="cursos" class="wrapper">
+        <div class="wrapper_title">
+            <h2>Cursos</h2>
+        </div>
+        <div class="container">
+                <div class="row">
+                    <!--Nueva Evaluación-->
+                    <div class="col-lg-6">
+                        <h3>Crear un Nuevo Curso</h3>
+                        <form>
+                                <div class="form-row">
+                                  <div class="form-group col-md-6">
+                                    <label for="inputEmail4">Nombre del Curso</label>
+                                    <input type="email" class="form-control" id="inputEmail4" placeholder="Nombre">
+                                  </div>
+                                  <div class="form-group col-md-6">
+                                    <label for="inputPassword4">Código</label>
+                                    <input type="password" class="form-control" id="inputPassword4" placeholder="Código">
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <label for="inputAddress">Profesor(a) de Cátedra</label>
+                                  <input type="text" class="form-control" id="inputAddress" placeholder="Nombre Prof.">
+                                </div>
+                                <div class="form-group">
+                                        <label for="exampleFormControlSelect1">Días de Clases</label>
+                                        <select multiple class="form-control" id="exampleFormControlSelect1">
+                                          <option>Lunes</option>
+                                          <option>Martes</option>
+                                          <option>Miércoles</option>
+                                          <option>Jueves</option>
+                                          <option>Viernes</option>
+                                        </select>
+                                        
+                                      </div>
+                                <div class="form-group">
+                                    <div class="form-row">
+                                    <div class="form-group col-md-4">
+                                        <select name="form-control form-control-lg" id="">
+                                            <option value="otonho">Otoño</option>
+                                            <option value="primavera">Primavera</option>
+                                        </select>
+                                        
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <input type="number" name="" max="2020" min="2015" value="2019" id="">
+
+                                    </div>
+                                    <div class="form-group col-md-">
+                                            <button type="submit" class="btn btn-primary">Crear</button>
+                                    </div>
+                                    </div>
+                                </div>
+                                
+                                    
+                               
+                                
+                                
+                                
+                              </form>
+                            
+                    </div>
+                    <!--Lista de Evaluaciones-->
+                    <div class="col-lg-6">
+                            <h3>Lista de Cursos</h3>
+                            <ul class="list-group">
+                                    <li class="list-group-item "><a href="">CC4501-1 / 2019-1</a> <div class="float_right"> <span style="float:right;"></span> <span class="badge badge-pill badge-info">Info</span><span class="badge badge-pill badge-warning">Editar</span><span class="badge badge-pill badge-danger">Eliminar</span></div></li>
+                                    <li class="list-group-item "><a href="">CC4501-1 / 2018-2</a> <div class="float_right"> <span style="float:right;"></span> <span class="badge badge-pill badge-info">Info</span><span class="badge badge-pill badge-warning">Editar</span><span class="badge badge-pill badge-danger">Eliminar</span></div></li>
+                                    <li class="list-group-item "><a href="">CC4501-1 / 2018-1</a><div class="float_right">  <span style="float:right;"></span> <span class="badge badge-pill badge-info">Info</span><span class="badge badge-pill badge-warning">Editar</span><span class="badge badge-pill badge-danger">Eliminar</span></div></li>
+                                    <li class="list-group-item "><a href="">CC4501-1 / 2017-2</a><div class="float_right">  <span style="float:right;"></span> <span class="badge badge-pill badge-info">Info</span><span class="badge badge-pill badge-warning">Editar</span><span class="badge badge-pill badge-danger">Eliminar</span></div></li>
+                                    <li class="list-group-item "><a href="">CC4501-1 / 2017-1</a><div class="float_right">  <span style="float:right;"></span> <span class="badge badge-pill badge-info">Info</span><span class="badge badge-pill badge-warning">Editar</span><span class="badge badge-pill badge-danger">Eliminar</span></div></li>
+                                    <li class="list-group-item "><a href="">CC4501-1 / 2016-2</a><div class="float_right">  <span style="float:right;"></span> <span class="badge badge-pill badge-info">Info</span><span class="badge badge-pill badge-warning">Editar</span><span class="badge badge-pill badge-danger">Eliminar</span></div></li>
+
+                            </ul> 
+                            <div style="margin-top:1em;">
+                                    <button class="btn btn-primary">Ver Más</button>
+                            </div>
+                            
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
