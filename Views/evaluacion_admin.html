@@ -70,16 +70,19 @@
 	  	<!-- Nav pills -->
 	  	<ul class="nav nav-tabs" role="tablist">
 	  		<li class="nav-item">
-	  			<a class="nav-link active" data-toggle="pill" href="#informacion">Información</a>
+	  			<a class="nav-link active" data-toggle="pill" href="#informacion">Información General</a>
+	  		</li>
+	  		<li class="nav-item">
+	  			<a class="nav-link" data-toggle="pill" href="#evaluacion">Evaluación</a>
 	  		</li>
 	    	<li class="nav-item">
-	      		<a class="nav-link" data-toggle="pill" href="#rubrica">Rúbrica</a>
+	      		<a class="nav-link" data-toggle="pill" href="#rubrica">Rúbrica Seleccionada</a>
 	    	</li>
 		    <li class="nav-item">
-		        <a class="nav-link" data-toggle="pill" href="#evaluadores">Evaluadores</a>
+		        <a class="nav-link" data-toggle="pill" href="#evaluadores">Evaluadores Autorizados</a>
 		    </li>
 		    <li class="nav-item">
-		      	<a class="nav-link" data-toggle="pill" href="#equipos">Equipos</a>
+		      	<a class="nav-link" data-toggle="pill" href="#equipos">Equipos Pendientes</a>
 		    </li>
 		</ul>
 
@@ -121,6 +124,68 @@
 		            </div>
 		        </div>
 			</div>
+			<div id="evaluacion" class="container tab-pane"><br>
+				<form>
+				    <table class="table table-warning" style="text-align: center; margin-bottom: 0px;">
+				    	<tr>
+				    		<th>Criterios</th>
+				    		<th>Puntos</th>				    		
+				    	</tr>
+				    	<tr>
+				    		<td>Criterio 1</td>
+				    		<td><input type="radio" name=""><br><label>0.0</label></td>
+				    		<td><input type="radio" name=""><br><label>0.3</label></td>
+				    		<td><input type="radio" name=""><br><label>0.5</label></td>
+				    		<td><input type="radio" name=""><br><label>0.8</label></td>
+				    	</tr>
+				    	<tr>
+				    		<td>Criterio 2</td>
+				    		<td><input type="radio" name=""><br><label>0.0</label></td>
+				    		<td><input type="radio" name=""><br><label>0.5</label></td>
+				    	</tr>
+				    	<tr>
+				    		<td>Criterio 3</td>
+				    		<td><input type="radio" name=""><br><label>0.0</label></td>
+				    		<td><input type="radio" name=""><br><label>0.2</label></td>
+				    		<td><input type="radio" name=""><br><label>0.4</label></td>
+				    		<td><input type="radio" name=""><br><label>0.6</label></td>
+				    		<td><input type="radio" name=""><br><label>0.8</label></td>
+				    	</tr>
+				    	<tr>
+				    		<td>Criterio 4</td>
+				    		<td><input type="radio" name=""><br><label>0.0</label></td>
+				    		<td><input type="radio" name=""><br><label>0.5</label></td>
+				    		<td><input type="radio" name=""><br><label>1.0</label></td>
+				    	</tr>
+				    	<tr>
+				    		<td>Criterio 5</td>
+				    		<td><input type="radio" name=""><br><label>0.0</label></td>
+				    		<td><input type="radio" name=""><br><label>0.5</label></td>
+				    		<td><input type="radio" name=""><br><label>0.8</label></td>
+				    		<td><input type="radio" name=""><br><label>1.0</label></td>
+				    	</tr>
+				    	<tr>
+				    		<td>Criterio 6</td>
+				    		<td><input type="radio" name=""><br><label>0.0</label></td>
+				    		<td><input type="radio" name=""><br><label>0.5</label></td>
+				    		<td><input type="radio" name=""><br><label>1.0</label></td>
+				    	</tr>
+				    	<tr>
+				    		<td>Criterio 7</td>
+				    		<td><input type="radio" name=""><br><label>0.0</label></td>
+				    		<td><input type="radio" name=""><br><label>0.3</label></td>
+				    		<td><input type="radio" name=""><br><label>0.6</label></td>
+				    		<td><input type="radio" name=""><br><label>0.9</label></td>
+				    	</tr>
+				    </table>
+				    <table class="table table-warning" style="text-align: center; margin-top: 0px; margin-bottom: 10px;">
+				    	<tr>
+				    		<th><label>Duración de Presentación: </label><input type="text" name=""></th>
+				    		<th><button class="btn btn-success" type="submit" style="width: 80%">Enviar</button></th>
+				    	</tr>
+				    </table>
+				</form>
+		    </div>
 		    <div id="rubrica" class="container tab-pane"><br>
 			    
 		    </div>
