@@ -75,15 +75,15 @@
 	  		<li class="nav-item">
 	  			<a class="nav-link" data-toggle="pill" href="#evaluacion">Evaluación</a>
 	  		</li>
-	    	<li class="nav-item">
-	      		<a class="nav-link" data-toggle="pill" href="#rubrica">Rúbrica Seleccionada</a>
-	    	</li>
-		    <li class="nav-item">
-		        <a class="nav-link" data-toggle="pill" href="#evaluadores">Evaluadores Autorizados</a>
-		    </li>
 		    <li class="nav-item">
 		      	<a class="nav-link" data-toggle="pill" href="#equipos">Equipos Pendientes</a>
 		    </li>
+		    <li class="nav-item">
+		        <a class="nav-link" data-toggle="pill" href="#evaluadores">Evaluadores Autorizados</a>
+		    </li>
+	    	<li class="nav-item">
+	      		<a class="nav-link" data-toggle="pill" href="#rubrica">Rúbrica Seleccionada</a>
+	    	</li>
 		</ul>
 
 	  	<!-- Tab panes -->
@@ -164,19 +164,6 @@
 				    		<td><input type="radio" name="criterio_5" value="0.8"><br><label>0.8</label></td>
 				    		<td><input type="radio" name="criterio_5" value="1.0"><br><label>1.0</label></td>
 				    	</tr>
-				    	<tr>
-				    		<td>Criterio 6</td>
-				    		<td><input type="radio" name="criterio_6" value="0.0"><br><label>0.0</label></td>
-				    		<td><input type="radio" name="criterio_6" value="0.5"><br><label>0.5</label></td>
-				    		<td><input type="radio" name="criterio_6" value="1.0"><br><label>1.0</label></td>
-				    	</tr>
-				    	<tr>
-				    		<td>Criterio 7</td>
-				    		<td><input type="radio" name="criterio_7" value="0.0"><br><label>0.0</label></td>
-				    		<td><input type="radio" name="criterio_7" value="0.3"><br><label>0.3</label></td>
-				    		<td><input type="radio" name="criterio_7" value="0.6"><br><label>0.6</label></td>
-				    		<td><input type="radio" name="criterio_7" value="0.9"><br><label>0.9</label></td>
-				    	</tr>
 				    </table>
 				    <table class="table table-warning" style="text-align: center; margin-top: 0px; margin-bottom: 10px;">
 				    	<tr>
@@ -186,7 +173,7 @@
 				    </table>
 				</form>
 		    </div>
-		    <div id="rubrica" class="container tab-pane"><br>
+		    <div id="rubrica" class="container tab-pane table-responsive-lg"><br>
 		    	<button class="btn btn-warning" style="width: 40%;">Editar <i class="fa fa-edit"></i></button>
 			    <table class="table table-striped">
 			    	<tr>
@@ -237,11 +224,7 @@
 		      	<div class="col-lg-6">
                     <ul class="list-group">
                     	<li class="list-group-item ">
-                        	<a href="" style="color: green;">Nuevo Evaluador </a>
-                        	<div class="float_right">
-                        		<span style="float:right;"></span>
-                        		<span class="badge badge-pill badge-success">Agregar</span>
-                        	</div>
+                        	<button type="button" class="btn btn-success" data-toggle="modal" data-target="#agregar_evaluador">Nuevo Evaluador </button>
                         </li>
                         <li class="list-group-item ">
                         	<a href="">Jorge Santos </a>
@@ -421,5 +404,57 @@
 		</div>
 	</div>
 
+
+	<div class="modal" id="agregar_evaluador">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">
+						Agregar Evaluador
+					</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body">
+					<h5>
+						Evaluadores no seleccionados
+					</h5>
+					<form>
+						<input type="checkbox" name=""> Seleccionar todos
+						<ul class="list-group">
+							<li class="list-group-item ">
+	                        	Evaluador 5
+	                        	<div class="float_right">
+	                        		<span style="float:right;"></span>
+	                        		<span><input type="checkbox" name=""></span>
+	                        	</div>
+	                        </li>
+	                        <li class="list-group-item ">
+	                        	Evaluador 6
+	                        	<div class="float_right">
+	                        		<span style="float:right;"></span>
+	                        		<span><input type="checkbox" name=""></span>
+	                        	</div>
+	                        </li>
+	                        <li class="list-group-item ">
+	                        	Evaluador 7
+	                        	<div class="float_right">
+	                        		<span style="float:right;"></span>
+	                        		<span><input type="checkbox" name=""></span>
+	                        	</div>
+	                        </li>
+	                        <li class="list-group-item ">
+	                        	Evaluador 8
+	                        	<div class="float_right">
+	                        		<span style="float:right;"></span>
+	                        		<span><input type="checkbox" name=""></span>
+	                        	</div>
+	                        </li>
+	                    </ul>
+	                    <button type="submit" class="btn btn-success">Agregar seleccionados</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
