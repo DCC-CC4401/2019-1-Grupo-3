@@ -6,20 +6,133 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Rúbrica del administrador</title>
      <!-- Bootstrap CSS -->
-     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
 </head>
 <body>
-    <div class="jumbotron container mx-auto align-middle" style="height:80vh; margin-top: 10vh;">
+    <div class="jumbotron container mx-auto align-middle" style="margin-top: 10vh;">
         <h1>Rúbrica:</h1>
-        <h3>Nombre de la rúbrica</h3>
+        <div class="container">
+        <div class="row">
+        <h3>Rúbrica para la tarea 4</h3>
+        <button class="btn"><i class="fas fa-pencil-alt"></i></button>
+        </div>
+        </div>
         <br>       
         <button type="button">Agregar aspecto</button>
         <button type="button" style="float:right;">Guardar</button>       
+        <table class="table">
+            <tbody>
+                <tr>
+                <td>
+                    <div class="container">
+                        <div class="row">Modelo de datos</div>
+                        <div class="row"> <button class="btn"><i class="fas fa-pencil-alt"></i></button> </div>
+                        <div class="row"> <button class="btn"><i class="fas fa-trash"></i></button> </div>
+                    </div>
+                    
+                </td>
+                <td>
+                    <div class="container">
+                    <div class="row">No incluye su modelo de datos</div>
+                    <div class="row">0.0</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="container">
+                    <div class="row">Incluye su modelo de datos, pero no explica las entidades principales</div>
+                    <div class="row">0.3</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="container">
+                    <div class="row">Incluye su modelo de datos, y explica las entidades principales</div>
+                    <div class="row">0.7</div>
+                    </div>
+                    </td>
+                    <td>
+                    <div class="container">
+                    <div class="row">Incluye su modelo de datos, explica entidades principales y las relaciones entre estas</div>
+                    <div class="row">1.0</div>
+                    </div>
+                </td>
+                </tr> 
+                <br>
+        <tr>
+            <td>
+                <div class="container">
+                    <div class="row">Demo: completitud c/r a funcionalidad solicitada</div>
+                    <div class="row"> <button class="btn"><i class="fas fa-pencil-alt"></i></button> </div>
+                    <div class="row"> <button class="btn"><i class="fas fa-trash"></i></button> </div>
+                </div>
+            </td>
+            <td>
+                <div class="container">
+                <div class="row">Solo describe las interfaces, sin explicar cómo satisfacen los requisitos</div>
+                <div class="row">0.0</div>
+                </div>
+                
+            </td>
+            <td>
+                <div class="container">
+                <div class="row">Solo para algunas interfaces muestra cómo satisfacen los requisitos funcionales</div>
+                <div class="row">0.3</div>
+                </div>
+                </td>
+        
+            <td>
+                <div class="container">
+                <div class="row">Para casi todas las interfaces, muestra cómo satisfacen los requisitos funcionales</div>
+                <div class="row">0.7</div>
+                </div>
+            </td>
+            <td>
+                <div class="container">
+                    <div class="row">Muestra claramente que las interfaces satisfacen los requisitos funcionales</div>
+                    <div class="row">1.0</div>
+                </div>
+                </td>
+        </tr>
+
         <br>
-        <br>
-        <div class="row">
-            
-        </div>
+        <tr>
+            <td>
+                <div class="container">
+                    <div class="row">Demo:fallas</div>
+                    <div class="row"> <button class="btn"><i class="fas fa-pencil-alt"></i></button> </div>
+                    <div class="row"> <button class="btn"><i class="fas fa-trash"></i></button> </div>
+                </div>
+                
+            </td>
+            <td>
+                <div class="container">
+                    <div class="row">Demasiadas fallas severas durante la demo, no se pudo continuar haciendo la demo</div>
+                    <div class="row">0.0</div>
+                </div>
+            </td>
+            <td>
+                <div class="container">
+                    <div class="row">Varias fallas de mediana severidad durante la demo, solo se pudo mostrar en forma parcial la funcionalidad</div>
+                    <div class="row">0.3</div>
+                </div>
+            </td>
+            <td>
+                <div class="container">
+                    <div class="row">Algunas fallas de mediana severidad durante la demo, se pudo mostrar en forma casi completa la funcionalidad</div>
+                    <div class="row">0.7</div>
+                </div>
+            </td>
+            <td>
+                <div class="container">
+                    <div class="row">Muy pocas fallas de baja severidad durante la demo, se pudo mostrar en forma completa la funcionalidad</div>
+                    <div class="row">1.0</div>
+                </div>
+            </td>
+        </tr>
+        </tbody>
+        </table>
         <!-- Duración-->
         <label for="duracion-min">Duración mínima:</label>
         <input class= "rounded" type="text" id="duracion-min">
